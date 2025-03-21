@@ -25,7 +25,7 @@ html, body {
 
 /* NAVBAR WRAPPER */
 .navbar-wrapper {
-  position: fixed;           /* Locks the navbar in place */
+          /* Locks the navbar in place */
   top: 0;                    /* Positions it at the top */
   width: 100%;               /* Makes it span the full width */
   z-index: 1000;             /* Ensures it stays above other content */
