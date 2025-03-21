@@ -1,4 +1,10 @@
-import { BrowserRouter as Router, Route, Routes, useLocation } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useLocation,
+} from "react-router-dom";
+import { useState } from "react";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Videos from "./Components/Videos/Videos";
@@ -17,12 +23,13 @@ function App() {
 
 function Main() {
   const location = useLocation();
-  const isHome = location.pathname === "/";
+  // const isHome = location.pathname === "/";
+  const [atHome, setAtHome] = useState(true);
 
   return (
-    <div className={isHome ? "home-bg" : "other-bg"}>
+    <div className={atHome ? "home-bg" : "other-bg"}>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home setAtHome={setAtHome} />} />
         <Route path="/about" element={<About />} />
         <Route path="/videos" element={<Videos />} />
         <Route path="/publications" element={<Publications />} />

@@ -82,7 +82,7 @@
 /* Event image - Keep it on the right */
 .event-image {
   width: 30%; /* Adjust image width */
-  height: 100px; /* Ensures consistent height */
+  height: 40%; /* Ensures consistent height */
   object-fit: cover; /* Ensures it fits properly */
   border-radius: 10px;
 }

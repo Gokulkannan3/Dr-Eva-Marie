@@ -42,7 +42,7 @@ const Videos = () => {
     <div className="home-container">
       {/* Comedy Section */}
       <div className="video-section">
-        <h2 className="section-title">Comedy</h2>
+        <h2 className="section-title">Videos</h2>
         <button
           className="scroll-button left"
           onClick={() => scrollLeft(comedyRef)}
@@ -80,7 +80,7 @@ const Videos = () => {
 
       {/* Romance Section */}
       <div className="video-section">
-        <h2 className="section-title">Romance</h2>
+        <h2 className="section-title">Conference</h2>
         <button
           className="scroll-button left"
           onClick={() => scrollLeft(romanceRef)}
