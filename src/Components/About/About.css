@@ -29,7 +29,7 @@
   margin: 0 0 3rem 0;
   text-transform: uppercase;
   text-align: center;
-  font-family: playfair display, serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 200;
 }
 
@@ -69,10 +69,9 @@
   padding: 0 2em;
 }
 
-
-.recognition h2{
+.recognition h2 {
   font-size: 48px;
-  font-family: playfair display, serif;
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   font-weight: 200;
 }
@@ -84,18 +83,18 @@
   /* flex-direction: row; */
 }
 
-.cell-content p{
+.cell-content p {
   text-align: center;
   font-size: 18px;
 }
 
-.cell-content h4{
+.cell-content h4 {
   text-align: center;
   margin-bottom: 3rem;
   font-size: 24px;
 }
 
-.cell-content{
+.cell-content {
   display: flex;
   flex-direction: column;
   /* justify-content: space-around; */
