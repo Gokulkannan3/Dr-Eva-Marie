@@ -1,0 +1,15 @@
+/* App.css */
+.home-bg {
+    background: url('/public/1.png') center center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
+  .other-bg {
+    background: url('/public/2.png') center center no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+  }
+  
