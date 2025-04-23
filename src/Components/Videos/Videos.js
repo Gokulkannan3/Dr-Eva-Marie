@@ -55,16 +55,15 @@ const Videos = (handleNavClick = () => {}) => {
               return (
                 <div key={index} className="video-container">
                  <ReactPlayer
-  url={url}
-  width="100%"
-  height="100%"
-  playing={playing === globalIndex}
-  light={true}
-  onClickPreview={() => setPlaying(globalIndex)}
-  controls
-  muted
-/>
-
+                  url={url}
+                  width="100%"
+                  height="100%"
+                  playing={playing === globalIndex}
+                  light={true}
+                  onClickPreview={() => setPlaying(globalIndex)}
+                  controls
+                  muted
+                />
                 </div>
               );
             })}

@@ -197,9 +197,12 @@ body {
 /* RESPONSIVE NAVBAR */
 @media (max-width: 768px) {
   .navbar {
-    width: 100%;
+    width: 94%;
     border-radius: 0;
     padding: 0.5rem 1rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
   }
 
   .desktop-only {
@@ -208,9 +211,26 @@ body {
 
   .hamburger {
     display: flex;
+    transform:translateX(-25px);
   }
   .navbar-wrapper {
     padding-top: 0.5rem; /* Smaller padding on mobile */
+  }
+
+  .nav-links{
+    width:88%;
+    transform:translate(8px , -10px);
+  }
+
+  .hero-section{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .hero-text{
+    display:flex;
+    align-items:center;
   }
 }
 

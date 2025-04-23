@@ -103,7 +103,7 @@
 @media (max-width: 768px) {
   .event-card {
     flex-direction: column; /* Stack image & text on mobile */
-    text-align: center;
+    width:90%;
   }
   .event-image {
     width: 100%; /* Full width image on small screens */

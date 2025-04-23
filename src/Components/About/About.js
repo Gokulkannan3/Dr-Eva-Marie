@@ -10,7 +10,7 @@ const About = ({handleNavClick = () => {}}) => {
 
   return (
     <section className="about-section" id="about">
-           <div className="about-container">
+      <div className="about-container">
         <h2>Dr. Eva-Marie Muller-Stuler</h2>
         <div className="bio">
           <div className="hero-image">

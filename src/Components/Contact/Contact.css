@@ -180,3 +180,10 @@
   font-size: 0.9rem;
   color: #e2e8f0;
 }
+
+
+@media (max-width: 768px){
+  .contact-form{
+    width:80%
+  }
+}

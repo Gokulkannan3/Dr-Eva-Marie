@@ -90,11 +90,9 @@ function Home({ setAtHome }) {
             <div className="hero-text">
               <h1>DR. EVA MARIE MULLER-STULER</h1>
               <p>
-  Dr. Eva-Marie Muller-Stuler leads the Data & AI practice for Ernst & Young across the Middle East and North Africa.
-  Previously CTO for AI at IBM, she’s a global pioneer in ethical and responsible AI.
-</p>
-
-
+                Dr. Eva-Marie Muller-Stuler leads the Data & AI practice for Ernst & Young across the Middle East and North Africa.
+                Previously CTO for AI at IBM, she’s a global pioneer in ethical and responsible AI.
+              </p>
             </div>
       
           </section>
@@ -103,23 +101,23 @@ function Home({ setAtHome }) {
               <p>
               Dr. Eva-Marie Muller-Stuler is leading the Data & AI practice for Ernst & Young for the Middle East and North Africa. She is responsible for the development of Data Governance frameworks, Data Strategies, and the implementation of complex data science and AI projects and transformations. </p>
               <a
-  href="#about"
-  className="read-more-link"
-  onClick={(e) => {
-    e.preventDefault();
-    handleNavClick('about');
-  }}
->
-  Learn more →
-</a>
+                href="#about"
+                className="read-more-link"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavClick('about');
+                }}
+              >
+                Learn more →
+              </a>
 
             </section>
             <section className="content-section">
-  <h2>As an International Speaker</h2>
-  <p>
-    Dr. Eva-Marie Muller-Stuler is a globally recognized voice in Data Science and AI. With over two decades of experience spanning NGOs, governments, and Fortune 500 companies, she is a sought-after speaker at prestigious platforms including the United Nations and UNESCO. 
-  </p>
-</section>
+              <h2>As an International Speaker</h2>
+              <p>
+                Dr. Eva-Marie Muller-Stuler is a globally recognized voice in Data Science and AI. With over two decades of experience spanning NGOs, governments, and Fortune 500 companies, she is a sought-after speaker at prestigious platforms including the United Nations and UNESCO. 
+              </p>
+            </section>
             <div className="recognition">
             <h2>International recognitions</h2>
     
@@ -231,34 +229,31 @@ function Home({ setAtHome }) {
         </button>
       )}
       <footer className="footer">
-  <div className="footer-inner">
-    <div className="footer-links">
-      {['home', 'about', 'videos', 'publications', 'podcasts', 'events', 'contact'].map((tab) => (
-        <button
-          key={tab}
-          className="footer-link"
-          onClick={() => {
-            handleNavClick(tab);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }}
-        >
-          {tab.charAt(0).toUpperCase() + tab.slice(1)}
-        </button>
-      ))}
-    </div>
+        <div className="footer-inner">
+          <div className="footer-links">
+            {['home', 'about', 'videos', 'publications', 'podcasts', 'events', 'contact'].map((tab) => (
+              <button
+                key={tab}
+                className="footer-link"
+                onClick={() => {
+                  handleNavClick(tab);
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+              >
+                {tab.charAt(0).toUpperCase() + tab.slice(1)}
+              </button>
+            ))}
+          </div>
 
 
 
-    <div className="footer-address">
-      <p>Dr. Eva</p>
-      <p>123 Health Street, Suite 456</p>
-      <p>New York, NY 10001</p>
-    </div>
-  </div>
-</footer>
-
-
-
+          <div className="footer-address">
+            <p>Dr. Eva</p>
+            <p>123 Health Street, Suite 456</p>
+            <p>New York, NY 10001</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

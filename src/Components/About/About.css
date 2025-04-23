@@ -12,7 +12,6 @@
   margin: auto;
   flex-direction: column;
   margin-bottom: 5rem;
-  
 }
 
 .recognition {
@@ -105,3 +104,46 @@
 }
 /* Read More Button */
 
+@media (max-width: 768px) {
+  
+  .about-container h2,
+  .recognition h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 2rem;
+  }
+
+  .about-hero h4{
+    display:flex;
+    justify-content:center;
+    transform:translateY(50px);
+  }
+
+  .bio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .grid-cell-abt {
+    flex-direction: column;
+  }
+
+  .about-container,
+  .recognition {
+    padding: 0 1rem;
+  }
+
+  .about-hero {
+    padding: 0;
+  }
+
+  .hero-image {
+    padding: 0;
+  }
+
+  .cell-content {
+    padding: 0 1rem;
+  }
+}
