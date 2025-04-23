@@ -8,33 +8,63 @@ import Events from '../Events/Events';
 import Contact from '../Contact/Contact';
 
 function Navbar({ activeLink, handleNavClick }) {
+  const [isOpen, setIsOpen] = useState(false);
+  const links = ['home', 'about', 'videos', 'publications', 'podcasts', 'events', 'contact'];
+
+  const handleClick = (link) => {
+    handleNavClick(link);
+    setIsOpen(false); // Close menu on click
+  };
+
   return (
     <div className="navbar-wrapper">
       <nav className="navbar">
         <div className="brand">
           <img src="/logo.png" alt="DrEva Logo" className="brand-logo" />
         </div>
-        <ul className="nav-links">
-        {['home', 'about', 'videos', 'publications', 'podcasts', 'events', 'contact'].map((link) => (
+
+        {/* Hamburger Icon for mobile */}
+        <div className="hamburger" onClick={() => setIsOpen(!isOpen)}>
+          <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+          <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+          <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+        </div>
+
+        {/* Desktop nav */}
+        <ul className="nav-links desktop-only">
+          {links.map((link) => (
             <li
               key={link}
               className={`nav-item ${activeLink === link ? 'active' : ''}`}
-              onClick={() => handleNavClick(link)}
+              onClick={() => handleClick(link)}
             >
-              <a 
-                href={`#${link}`} 
-                onClick={(e) => e.preventDefault()}  // Prevent default scrolling behavior
-              >
+              <a href={`#${link}`} onClick={(e) => e.preventDefault()}>
                 {link.charAt(0).toUpperCase() + link.slice(1)}
               </a>
             </li>
           ))}
         </ul>
       </nav>
+
+      {/* Mobile nav */}
+      {isOpen && (
+        <ul className="nav-links mobile-menu">
+          {links.map((link) => (
+            <li
+              key={link}
+              className={`nav-item ${activeLink === link ? 'active' : ''}`}
+              onClick={() => handleClick(link)}
+            >
+              <a href={`#${link}`} onClick={(e) => e.preventDefault()}>
+                {link.charAt(0).toUpperCase() + link.slice(1)}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 }
-
 function Home({ setAtHome }) {
   const [activeLink, setActiveLink] = useState('home');
 
