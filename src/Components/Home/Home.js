@@ -217,19 +217,7 @@ function Home({ setAtHome }) {
       ))}
     </div>
 
-    <div className="footer-cta">
-      <a
-        href="#contact"
-        className="consult-button"
-        onClick={(e) => {
-          e.preventDefault();
-          handleNavClick('contact');
-          window.scrollTo({ top: 0, behavior: 'smooth' });
-        }}
-      >
-        Let’s Consult
-      </a>
-    </div>
+
 
     <div className="footer-address">
       <p>Dr. Eva</p>
