@@ -1,17 +1,17 @@
 .container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1200px;
 }
 
 .publications h1{
-    font-size: 48px;
-    font-weight: 500;
-    font-family: 'Playfair Display', Georgia, serif;
-    color: #f9f9f9;
-    text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+  font-family: 'Playfair Display', Georgia, serif;
+  color: #f9f9f9;
+  text-align: center;
 }
 
 .publications hr{
@@ -19,59 +19,68 @@
 }
 
 .yr-2023{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 hr{
-    background: #f9f9f9;
-    color: #f9f9f9;
-    width: 100%;
+  background: #f9f9f9;
+  color: #f9f9f9;
+  width: 100%;
 }
 
 .yr-2023 h3{
-    font-size: 32px;
-    color: #f9f9f9;
-    font-weight: 300;
+  font-size: 32px;
+  color: #f9f9f9;
+  font-weight: 300;
 }
 
 .grid-ct{
-    display: flex;
+  display: flex;
 }
 
 .grid-cell{
-    display: flex;
-    flex-direction: column;
-    padding: 0 30px 48px;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px 48px;
+  gap: 2rem;
 }
 
 .grid-cell-content{
-    display: flex;
+  display: flex;
 }
 
 .grid-cell-content h5{
-    font-size: 24px;
-    color: #f9f9f9;
-    margin: 0;
+  font-size: 24px;
+  color: #f9f9f9;
+  margin: 0;
 }
 
 .grid-cell-content p{
-    font-size: 18px;
-    color: #f9f9f9;
-    margin: 0;
+  font-size: 18px;
+  color: #f9f9f9;
+  margin: 0;
 }
 
 .yr-2022{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tt{
+  width:100%;
 }
 
 .grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-1{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .yr-2022 h3{
@@ -120,7 +129,7 @@ hr{
 .grid-ls-p p{
     font-size: 18px;
     color: #f9f9f9;
-    margin: 0;
+    margin-top: 10px;
 }
 
 .grid-ls-p a{
@@ -187,12 +196,12 @@ hr{
 @media (max-width: 768px) {
     .container {
       text-align: center;
-      padding: 0 15px;
+      padding: 0 5px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content:center;
-      width:80%;
+      width:95%;
     }
   
     .publications h1,
@@ -207,11 +216,10 @@ hr{
     }
   
     .grid-ct {
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
       width: 100%;
-      display: flex;
+      gap: 10px;
     }
   
     .grid-cell {
@@ -221,7 +229,7 @@ hr{
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 0 0 30px;
+      padding: 0 0 20px;
     }
   
     .grid-cell img {
@@ -235,14 +243,7 @@ hr{
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 0 15px;
-    }
-  
-    .grid {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
+      padding: 0 10px;
     }
   
     .grid-ls {
@@ -273,13 +274,15 @@ hr{
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 0 15px;
     }
   
     .grid-ls-p a {
       word-break: break-all;
       display: flex;
-      justify-content: center;
+      justify-content: start;
+      text-align:start;
+      width:90%;
+      margin-top:10px;
     }
   
     /* Text elements with flex display */
@@ -287,6 +290,14 @@ hr{
       font-size: 28px;
       display: flex;
       justify-content: center;
+    }
+
+    .grid,
+    .grid-1{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      width: 100%;
+      gap: 20px;
     }
   
     .yr-2023 h3,
@@ -300,8 +311,8 @@ hr{
     .grid-flex-content h5,
     .grid-ls h5 {
       display: flex;
-      justify-content: center;
-      text-align: center;
+      justify-content: start;
+      text-align: start;
       font-size: 20px;
       width: 100%;
     }
@@ -310,12 +321,15 @@ hr{
     .grid-flex-content p,
     .grid-ls-p p {
       display: flex;
-      justify-content: center;
+      justify-content: start;
       font-size: 16px;
-      width: 80%;
-      margin: 0;
-      padding: 0;
-      text-align: center;
+      width: 100%;
+      text-align: start;
+      margin-top:10px;
+    }
+
+    .grid-ls-p p{
+      margin-top:-10px;
     }
   
     .books {
@@ -345,4 +359,57 @@ hr{
       justify-content: center;
       width: 80%;
     }
+
+    .grid-ct img{
+      width:100%;
+    }
+}
+
+@media (max-width: 480px){
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
+
+  .grid-1{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-ct{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-cell-content{
+    width:90%;
+  }
+
+  .grid-flex-content{
+    text-align:start;
+    width:90%;
+  }
+
+  .grid-flex-content p{
+    display:flex;
+    text-align:start;
+    margin-left:-30px;
+    transform:translateY(10px);
+  }
+
+  .grid-ls p
+  {
+    display:flex;
+    text-align:start;
+    width:90%;
+    margin-top:2px;
+  }
+
+  .grid-ct img{
+    width:90%;
+  }
+
+  .grid-ls img{
+    width:90%;
+  }
+}

@@ -18,7 +18,7 @@ function Contact({ handleNavClick = () => {} }) {
 
   return (
     <section className="content-section1" id="contact">
-      <h2>Contact Us</h2>
+      <h2>Contact Me</h2>
       <p>Feel free to reach out for collaborations, speaking engagements, or inquiries.</p>
 
       <form className="contact-form" onSubmit={handleSubmit}>

@@ -31,7 +31,6 @@
   position: absolute;
   width: 380px;
   height: 580px;
-  transition: all 0.5s ease;
   opacity: 0;
   visibility: hidden;
 }
@@ -217,7 +216,8 @@
 @media (max-width: 768px) {
   .podcast-section {
     padding: 20px 10px;
-    min-height: auto;
+    height: auto;
+    margin-top:-160px;
   }
 
   .podcast-carousel {
@@ -227,7 +227,7 @@
 
   .podcast-slide {
     width: 280px;
-    height: 440px;
+    height: 100%;
   }
 
   .podcast-slide.active {
@@ -245,10 +245,11 @@
   .podcast-card {
     padding: 12px;
     border-radius: 15px;
+    height:500px;
   }
 
   .podcast-image {
-    height: 160px;
+    height: 100%;
     border-radius: 10px;
   }
 
@@ -310,12 +311,13 @@
 
 @media (max-width: 480px) {
   .podcast-slide {
-    width: 240px;
-    height: 360px;
+    width: 75%;
+    height: 100%;
   }
   
   .podcast-image {
-    height: 160px;
+    height: 100%;
+    width:100%;
   }
   
   .podcast-content {

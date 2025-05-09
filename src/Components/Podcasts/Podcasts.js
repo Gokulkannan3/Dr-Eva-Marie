@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import './Podcasts.css';
 
 // Updated podcast data with more relevant content and images
@@ -58,15 +58,6 @@ const PodcastCarousel = (handleNavClick = () => {}) => {
       prevIndex === 0 ? podcastData.length - 1 : prevIndex - 1
     );
   };
-
-  // Auto-slide functionality
-  useEffect(() => {
-    const interval = setInterval(() => {
-      goToNextSlide();
-    }, 5000);
-    
-    return () => clearInterval(interval);
-  }, []);
   
   const getSlideClassName = (index) => {
     if (index === activeIndex) return "podcast-slide active";
@@ -93,14 +84,10 @@ const PodcastCarousel = (handleNavClick = () => {}) => {
                   />
                 </div>
                 <div className="podcast-profile">
-                  <div className="profile-image">
-                    <img src={podcast.profileImage} alt={podcast.profileName} />
-                  </div>
                   <div className="profile-info">
                     <h3>{podcast.profileName}</h3>
                     <p>{podcast.role}</p>
                   </div>
-                  <button className="more-options">⋮</button>
                 </div>
                 <div className="podcast-content">
                   <h2>{podcast.title}</h2>

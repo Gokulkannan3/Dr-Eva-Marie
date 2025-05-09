@@ -14,30 +14,37 @@ const About = ({handleNavClick = () => {}}) => {
         <h2>Dr. Eva-Marie Muller-Stuler</h2>
         <div className="bio">
           <div className="hero-image">
-            <img src="/ph1.png" alt="Portrait of Dr. Eva-Marie Muller-Stuler" />
+            <img className='potrait-i' src="/ph1.png" alt="Portrait of Dr. Eva-Marie Muller-Stuler" />
           </div>
           <div className="about-hero">
             <h4>Bio</h4>
-            <p style={{ margin: 0 }}>
-              Dr. Eva-Marie Muller-Stuler is leading the Data & AI practice for Ernst & Young for the Middle East and North Africa. She is responsible for the development of Data Governance frameworks, Data Strategies, and the implementation of complex data science and AI projects and transformations.
+            <p>
+              Dr. Eva-Marie Müller-Stüler stands among the world’s foremost leaders in artificial intelligence (AI) and data science, renowned for her groundbreaking contributions that have shaped the foundation of modern AI. With a career spanning over two decades, she has consistently driven innovation through seminal concepts such as the Center of Excellence (COE), data ecosystems, and proprietary algorithms—advancements that remain pivotal to global AI frameworks today.            </p>
+            <p>
+              Currently leading the Data & AI practice for Ernst & Young (EY) in the Middle East and North Africa (MENA), Dr. Müller-Stüler spearheads the development of transformative data strategies, governance frameworks, and cutting-edge AI solutions for Fortune 500 companies, governments, and NGOs. By integrating AgenticAI (autonomous, goal-driven AI systems) and Generative AI (GenAI) into enterprise operations, she is revolutionizing how organizations optimize workflows, enhance decision-making, and reimagine customer experiences. Her prior role as CTO for Artificial Intelligence and Chief Data Scientist at IBM (Middle East & Africa) further solidified her reputation as a trailblazer in deploying scalable, ethical AI systems.            </p>
+            <p>
+              A mathematician by training, Dr. Müller-Stüler began her career revolutionizing European business performance through first-of-their-kind data models and restructuring methodologies. At KPMG London, she led one of Europe’s earliest data science teams, creating groundbreaking techniques that redefined how industries harness data for economic and societal impact. By 2013, her foresight into AI’s ethical implications catalyzed her leadership in co-developing global Ethical AI policies with institutions like the United Nations and UNESCO—establishing frameworks that balance innovation with accountability.
             </p>
-            <p style={{ margin: 0 }}>
-              Previously, Dr. Muller-Stuler was CTO for Artificial Intelligence and Chief Data Scientist for the Middle East and Africa at IBM.
+            <p className='global'>
+              <p>A Legacy of Firsts and Global Recognition</p>
+                <ul>
+                  <li>World’s Best Data Scientist (2020), Top 10 Most Influential Women in Technology (2021), Top 100 Brilliant Women in AI Ethics (2022), and 30 Outstanding Women in Data (2024).</li>
+                  <li>Architect of data ecosystems and COE models that standardize AI excellence across industries.</li>
+                  <li>Pioneer in operationalizing AgenticAI and GenAI to drive end-to-end digital transformation, from predictive analytics to autonomous process optimization.</li>
+                  <li>Sought-after advisor to global entities and a keynote speaker at premier forums, including the UN, UNESCO, and leading tech conferences.</li>
+                </ul>
             </p>
-            <p style={{ margin: 0 }}>
-              After studying mathematics and dissertation, Dr. Eva-Marie Muller-Stuler started her career in advising European companies on restructuring and performance optimization. For this, she developed many first-of-a-kind data methods and models. At KPMG in London, she led one of the first data science teams in Europe to develop groundbreaking data driven methods and techniques.
+            <h4 className='heading-champ'>
+              Champion of Inclusive Innovation
+            </h4>
+            <p className='para-champ'>
+              Dr. Müller-Stüler is a tireless advocate for equality in STEM, founding organizations that empower women in tech and mentoring through initiatives like Women in Data Science (WiDS). Her philosophy—“Diversity and inclusion forge workplaces rooted in trust, intellectual growth, and excellence”—drives her mission to create equitable opportunities worldwide.
             </p>
-            <p style={{ margin: 0 }}>
-              Since 2013, after seeing the impact of her work on industries and society, she spearheaded the development of Ethical and Responsible AI policies and framework with governmental and non-governmental organizations and highlighted the possibilities and impact of data science and AI on the economy, society, and individuals.
+            <p className='combine'>
+              “Combining passion for AI with expertise and diverse teams isn’t just transformative—it’s how we build a future that works for all. By embedding AgenticAI and GenAI into the core of business strategies, we’re not just solving problems—we’re redefining what’s possible.”
             </p>
-            <p style={{ margin: 0 }}>
-              For over 20 years, Dr. Muller-Stuler has worked for NGOs, governments, and F500 companies. She is a sought-after speaker at the United Nations, UNESCO, and many international conferences, as well as the founder and investor of several tech companies.
-            </p>
-            <p style={{ margin: 0 }}>
-              Today, Dr. Eva-Marie Muller-Stuler is one of the world's most respected data science thought leaders and has received numerous awards, including "World’s Best Data Scientist" (2020), "The 10 most influential Women in Technology" (2021), "Top 100 Brilliant Women in AI Ethics" (2022), "30 Outstanding Women in Data" (2024).
-            </p>
-            <p style={{ margin: 0 }}>
-              She is a strong advocate of equality in science and has founded and led several organizations that contribute to the advancement of women in the technology industry.
+            <p>
+              A serial entrepreneur and investor in tech ventures, Dr. Müller-Stüler continues to bridge the gap between ethical AI ambition and real-world impact, transforming industries through intelligent systems that learn, adapt, and lead.
             </p>
           </div>
         </div>
@@ -49,7 +56,7 @@ const About = ({handleNavClick = () => {}}) => {
 
         <div className="grid-cell-abt">
           <div className="cell-img">
-            <img src="/grid-img-1.webp" alt="Award" />
+            <img className='women-data' src="/grid-img-1.webp" alt="Award" />
           </div>
           <div className="cell-content">
             <h4>30 Outstanding Women in Data, 2024</h4>
@@ -71,20 +78,20 @@ const About = ({handleNavClick = () => {}}) => {
         </div>
 
         <div className="grid-cell-abt">
+          <div className="cell-img">
+            <img src="/grid-img-2 .png" alt="Award" />
+          </div>
           <div className="cell-content">
             <h4>List of 100 brilliant and inspiring women recognized in the 2022 list.</h4>
             <p>
               List of 100 brilliant and inspiring women recognized in the 2022 list.
             </p>
           </div>
-          <div className="cell-img">
-            <img src="/grid-img-2.webp" alt="Award" />
-          </div>
         </div>
 
         <div className="grid-cell-abt">
           <div className="cell-img">
-            <img src="/grid-img-3.webp" alt="Award" />
+            <img className='award' src="/grid-img-3.webp" alt="Award" />
           </div>
           <div className="cell-content">
             <h4>The 10 Most Influential Women in Technology</h4>
@@ -92,25 +99,25 @@ const About = ({handleNavClick = () => {}}) => {
         </div>
 
         <div className="grid-cell-abt">
+          <div className="cell-img">
+            <img src="/grid-img-4.webp" alt="Award" />
+          </div>
           <div className="cell-content">
             <h4>Voted one of the best data scientists in the world 2019</h4>
             <p>
               The machine learning industry has grown enormously since its inception in the first half of the 20th century. Data scientists have been responsible for the growth of machine learning. Some have contributed groundbreaking research of neural networks and deep learning, and others have built industry-leading applications of machine learning. Here are a number of data scientists that have contributed both to machine learning research and to applications as leaders in the industry. Many have built unimaginable innovations and leave their innovations for the millions of AI applications used today.
             </p>
           </div>
-          <div className="cell-img">
-            <img src="/grid-img-4.webp" alt="Award" />
-          </div>
         </div>
 
         <div className="grid-cell-abt">
           <div className="cell-img">
-            <img src="/grid-img-5.webp" alt="Award" />
+            <img className='pro-grp' src="/grid-img-5.webp" alt="Award" />
           </div>
           <div className="cell-content">
             <h4>The Open Group: Level 3 - Distinguished Data Scientist</h4>
             <p>
-              <strong>Professional Certification: Level 3 - Distinguished Data Scientist</strong>
+                <h4>Professional Certification: Level 3 - Distinguished Data Scientist</h4>
               Distinguished Data Scientists work with business leaders to solve problems by understanding, preparing, and analyzing data to predict emerging trends and to provide recommendations to optimize business results. They typically have academic training in a quantitative discipline such as statistics, operations research, machine learning, or econometrics, and combine use of data, analytics tools, and languages with strong communication, visualization, and storytelling skills.
             </p>
           </div>

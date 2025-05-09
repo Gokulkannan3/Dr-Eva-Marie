@@ -47,6 +47,7 @@ const eventData = [
       {
         title: "Athens Round Table Brussels",
         date: "Dec 2022",
+        image: "/Events/2022-1.webp",
         description: [
           "EU AI Act: What will it look like and what will it mean to organizations?",
         ],
@@ -55,6 +56,7 @@ const eventData = [
       {
         title: "Middle East Enterprise AI and Analytics Summit",
         date: "Oct 2022",
+        image: "/Events/2021-2.webp",
         description: [
           "Enabling technologies leading strategic digital transformation within an enterprise.",
         ],
@@ -63,6 +65,7 @@ const eventData = [
       {
         title: "Dubai Future Forum",
         date: "Oct 2022",
+        image: "/Events/2022-3.webp",
         description: [
           "The world's largest gathering of Futurists. Is Digital Poverty the new global Crisis? The more data you produce, the bigger will be your influence on the future.",
         ],
@@ -71,6 +74,7 @@ const eventData = [
       {
         title: "Global AI Summit",
         date: "Sep 2022",
+        image: "/Events/2022-4.webp",
         description: [
           "AI through the lens of Equality, Accessibility and Transparency",
         ],
@@ -79,6 +83,7 @@ const eventData = [
       {
         title: "2nd Middle East Data Analytics Forum",
         date: "Jun 2022",
+        image: "/Events/2022-5.webp",
         description: [
           "Getting results! - Building scalable and Trusted Data & AI solutions with impact",
         ],
@@ -87,6 +92,7 @@ const eventData = [
       {
         title: "Women in Data Science 2022 - Dubai, UAE",
         date: "Jun 2022",
+        image: "/Events/2022-6.webp",
         description: [
           "Ambassador and Keynote speaker",
           "Trusted AI - Why? What? and How?",
@@ -96,12 +102,14 @@ const eventData = [
       {
         title: "Women in Data Science 2022 - Dubai, Germany",
         date: "Apr 2022",
+        image: "/Events/2022-7.webp",
         description: ["Responsible AI -  what does this really mean?"],
         location: "UAE, Dubai",
       },
       {
         title: "Fulbright Speaker Series - Texas, USA",
         date: "Apr 2022",
+        image: "/Events/2022-8.webp",
         description: [
           "The future impact on economy and employment of Data & AI",
         ],
@@ -111,6 +119,7 @@ const eventData = [
         title: "Data Bahrain",
         // URL:"https://www.ec-mea.com/2nd-international-conference-of-data-future-of-everything-successfully-held-on-30th-march/",
         date: "Mar 2022",
+        image: "/Events/2022-9.webp",
         description: ["Data 'Future of everything' "],
         location: "UAE, Dubai",
       },
