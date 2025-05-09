@@ -152,8 +152,8 @@ function Home({ setAtHome }) {
             </section>
             <div className="recognition">
             <h2>International recognition</h2>
-            <div className='grid-abt'>
-              <div className="grid-cell-abt">
+            <div className='grid-abth'>
+              <div className="grid-cell-abth">
                 <div className="cell-content">
                   <h4>30 Outstanding Women in Data, 2024</h4>
                   <p>
@@ -162,7 +162,7 @@ function Home({ setAtHome }) {
                 </div>
               </div>
       
-              <div className="grid-cell-abt">
+              <div className="grid-cell-abth">
                 <div className="cell-content">
                   <h4>List of 100 brilliant and inspiring women recognized in the 2022 list.</h4>
                   <p>
@@ -171,13 +171,13 @@ function Home({ setAtHome }) {
                 </div>
               </div>
       
-              <div className="grid-cell-abt">
+              <div className="grid-cell-abth">
                 <div className="cell-content">
                   <h4>The 10 Most Influential Women in Technology</h4>
                 </div>
               </div>
       
-              <div className="grid-cell-abt">
+              <div className="grid-cell-abth">
                 <div className="cell-content">
                   <h4>Voted one of the best data scientists in the world 2019</h4>
                   <p>
@@ -186,7 +186,7 @@ function Home({ setAtHome }) {
                 </div>
               </div>
             </div>    
-            <div className="grid-cell-abt">
+            <div className="grid-cell-abth">
               <div className="cell-content">
                 <h4>The Open Group: Level 3 - Distinguished Data Scientist</h4>
                 <p>

@@ -162,8 +162,11 @@
   }
 
   .grid-cell-abt {
-    flex-direction: column;
+    flex-direction: column !important;
+    align-items: center;
+    width:100%;
   }
+
 
   .about-container,
   .recognition {
@@ -178,12 +181,21 @@
     padding: 0;
   }
 
-  .cell-content {
-    padding: 0 1rem;
+  .cell-content,
+  .cell-img {
+    flex: 1 1 100% !important;
+    padding: 0 !important;
+  }
+
+  .cell-img img{
+    width:100% !important;
+    height: 100% !important;   
   }
 
   .cell-img img.women-data{
-    transform:translateX(140px);
+    transform:translateX(100px) !important;
+    height:400px !important;
+    width:600px !important;
   }
 }
 
