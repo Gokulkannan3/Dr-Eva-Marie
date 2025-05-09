@@ -52,7 +52,7 @@ const About = ({handleNavClick = () => {}}) => {
 
       {/* Recognition Section */}
       <div className="recognition">
-        <h2>International recognitions</h2>
+        <h2>International recognition</h2>
 
         <div className="grid-cell-abt">
           <div className="cell-img">
