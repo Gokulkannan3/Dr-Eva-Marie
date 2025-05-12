@@ -128,6 +128,15 @@
 }
 /* Read More Button */
 
+.award{
+  width:80%;
+  margin-left:-200px;
+}
+
+.vote{
+  margin-top:50px;
+}
+
 @media (max-width: 768px) {
   
   .about-container h2,
@@ -196,6 +205,12 @@
     transform:translateX(100px) !important;
     height:400px !important;
     width:600px !important;
+  }
+
+  .award{
+    width:80%;
+    margin-left:0px;
+    margin-bottom:-50px;
   }
 }
 

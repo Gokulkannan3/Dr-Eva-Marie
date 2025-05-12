@@ -79,7 +79,7 @@ const About = ({handleNavClick = () => {}}) => {
 
         <div className="grid-cell-abt">
           <div className="cell-img">
-            <img src="/grid-img-2 .png" alt="Award" />
+            <img src="/grid-img-2.png" alt="Award" />
           </div>
           <div className="cell-content">
             <h4>List of 100 brilliant and inspiring women recognized in the 2022 list.</h4>
@@ -91,7 +91,7 @@ const About = ({handleNavClick = () => {}}) => {
 
         <div className="grid-cell-abt">
           <div className="cell-img">
-            <img className='award' src="/grid-img-3.webp" alt="Award" />
+            <img className='award' src="/image.png" alt="Award" />
           </div>
           <div className="cell-content">
             <h4>The 10 Most Influential Women in Technology</h4>
@@ -100,7 +100,7 @@ const About = ({handleNavClick = () => {}}) => {
 
         <div className="grid-cell-abt">
           <div className="cell-img">
-            <img src="/grid-img-4.webp" alt="Award" />
+            <img className='vote' src="/grid-img-4.webp" alt="Award" />
           </div>
           <div className="cell-content">
             <h4>Voted one of the best data scientists in the world 2019</h4>
