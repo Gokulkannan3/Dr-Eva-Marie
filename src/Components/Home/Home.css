@@ -134,7 +134,7 @@ body {
     justify-content:center;
     text-align:center;
     align-items:center;
-    margin-top:-10px;
+    margin-top:-10px !important;
   }
 
   .marquee-text{
@@ -390,6 +390,36 @@ body {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
 }
 
+.parabola-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%; /* Adjust width as needed */
+  height: 100%;
+}
+
+.parabola {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.parabola::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%; /* Double the container width for smooth curve */
+  height: 160%;
+  background: rgba(0, 0, 0, 0.32); /* Semi-transparent black */
+  border-radius: 48%;
+  transform: translateX(45%);
+  margin-top:-200px;
+}
+
 /* HERO SECTION */
 .hero-section {
   flex-grow: 1;
@@ -429,6 +459,7 @@ body {
   height: 100%;
   justify-content: center;
   margin-top:-60px;
+  z-index:1;
 }
 
 .hero-text h1 {
@@ -450,7 +481,7 @@ body {
     height:100%;
     display:flex;
     justify-content:center;
-    margin-top:1px;
+    margin-top:-30px;
   }
 
   .hero-text h1 {
@@ -472,7 +503,7 @@ body {
     justify-content:center;
     text-align:center;
     align-items:center;
-    margin-top:-10px;
+    margin-top:-70px;
   }
 
   .social-media-home{
@@ -489,6 +520,19 @@ body {
 
   .footer-link{
     font-size:20px !important;
+  }
+
+  .parabola::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%; /* Double the container width for smooth curve */
+    height: 160%;
+    background: rgba(0, 0, 0, 0.32); /* Semi-transparent black */
+    border-radius: 48%;
+    transform: translateX(45%);
+    margin-top:-180px;
   }
 }
 
@@ -562,6 +606,10 @@ body {
 
   .hero-portrait img{
     margin-top:-30px;
+  }
+
+  .parabola-container, .parabola {
+    display: none;
   }
 }
 
