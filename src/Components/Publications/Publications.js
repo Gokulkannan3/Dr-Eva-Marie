@@ -1,293 +1,226 @@
-import React from 'react'
-import './Publications.css'
-const Publications = (handleNavClick = () => {}) => {
+import React from 'react';
+import './Publications.css';
+
+const Link = ({ href, children }) => (
+  <button className="link-button" onClick={() => window.open(href, '_blank')}>
+    {children}
+  </button>
+);
+
+const Publications = () => {
   return (
-    <div class="container">
-      <div class="publications">
+    <div className="container">
+      <div className="publications">
         <h1>Publications</h1>
-        <hr></hr>
+        <hr />
       </div>
 
-      <div class="yr-2023">
+      <div className="yr-2023">
         <h3>2023</h3>
 
-        <div class="grid-ct">
-          <div class="grid-cell">
-            <img alt='img' src="/publications/2023-01.webp"></img>
-            <div class="grid-cell-content">
-              <h5>
-                Mastering Generative AI: Systematic Approach to Evaluate Risks Using AI in
-              </h5>
-              <p>
-                Nov 2023
-              </p>
+        <div className="grid-ct">
+          <div className="grid-cell">
+            <img alt="Publication cover" src="/publications/2023-01.webp" />
+            <div className="grid-cell-content">
+              <h5>Mastering Generative AI: Systematic Approach to Evaluate Risks Using AI</h5>
+              <p>Nov 2023</p>
             </div>
           </div>
 
-          <div class="grid-cell">
-            <img alt='img' src="/publications/2023-01.webp"></img>
-            <div class="grid-cell-content">
-              <h5>
-                Mastering Generative AI: Systematic Approach to Evaluate Risks Using AI in
-              </h5>
-              <p>
-                Nov 2023
-              </p>
+          <div className="grid-cell">
+            <img alt="Publication cover" src="/publications/2023-01.webp" />
+            <div className="grid-cell-content">
+              <h5>Mastering Generative AI: Systematic Approach to Evaluate Risks Using AI</h5>
+              <p>Nov 2023</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="yr-2022">
+      <div className="yr-2022">
         <h3>2022</h3>
 
-        <div class="grid">
-          <div class="grid-ls">
-            <a href="https://www.vde-verlag.de/buecher/537721/neue-dimensionen-in-data-science.html?etcc_cmp=IN_BV_AW_DS&gclid=Cj0KCQjw1aOpBhCOARIsACXYv-fmwQQ02qU66OoBGrvxUAzLXr4U8SCfqfOgQwMkknmlItdTexx-dYMaAgnkEALw_wcB" target='__blank'>
-              <img className='tt' alt='img' src='/publications/2022-01.webp'></img>
-            </a>
-            <div class="grid-flex-content">
-              <a href="https://www.vde-verlag.de/buecher/537721/neue-dimensionen-in-data-science.html?etcc_cmp=IN_BV_AW_DS&gclid=Cj0KCQjw1aOpBhCOARIsACXYv-fmwQQ02qU66OoBGrvxUAzLXr4U8SCfqfOgQwMkknmlItdTexx-dYMaAgnkEALw_wcB" target='__blank'>
-                <h5>Neue Dimensionen in Data Science</h5>
-              </a>
+        <div className="grid">
+          <div className="grid-ls">
+            <img className="tt" alt="Publication cover" src="/publications/2022-01.webp" />
+            <div className="grid-flex-content">
+              <h5>Neue Dimensionen in Data Science</h5>
               <p>2022</p>
             </div>
-            <div class="grid-ls-p">
-              <p>Interdisziplinäre Ansätze und Anwendungen aus Wissenschaft und Wirtschaft
-              </p>
-              <p>
-                Chapter 4: Die Notwendigkeit von Ethik für erfolgreiche künstliche Intelligenz
-              </p>
-              <a href='https://www.vde-verlag.de/buecher/537721/neue-dimensionen-in-data-science.html' target='__blank'>https://www.vde-verlag.de/buecher/537721/neue-dimensionen-in-data-science.html
-              </a>
+            <div className="grid-ls-p">
+              <p>Interdisziplinäre Ansätze und Anwendungen aus Wissenschaft und Wirtschaft</p>
+              <p>Chapter 4: Die Notwendigkeit von Ethik für erfolgreiche künstliche Intelligenz</p>
+              <Link href="https://www.vde-verlag.de/buecher/537721/neue-dimensionen-in-data-science.html">View Publication</Link>
             </div>
           </div>
 
-          <div class="grid-ls">
-            <a href="https://www.linkedin.com/pulse/futures-european-economy-jan-berger" target='__blank'>
-              <img className='tt' alt='img' src='/publications/2022-02.webp'></img>
-            </a>
-            <div class="grid-flex-content">
+          <div className="grid-ls">
+            <img className="tt" alt="Publication cover" src="/publications/2022-02.webp" />
+            <div className="grid-flex-content">
               <h5>The European Economy in a New World Order</h5>
               <p>Nov 2022</p>
             </div>
-            <div class="grid-ls-p">
-              <p>Contribution to research
-              </p>
+            <div className="grid-ls-p">
+              <p>Contribution to research</p>
+              <Link href="https://www.linkedin.com/pulse/futures-european-economy-jan-berger">View Publication</Link>
             </div>
           </div>
 
-          <div class="grid-ls">
-            <a href="https://gulfbusiness.com/how-ai-can-enhance-the-metaverse/" target='__blank'>
-              <img className='tt' alt='img' src='/publications/2022-03.webp'></img>
-            </a>
-            <div class="grid-flex-content">
-              <h5>Gulft Business</h5>
-              <p>November 2022</p>
+          <div className="grid-ls">
+            <img className="tt" alt="Publication cover" src="/publications/2022-03.webp" />
+            <div className="grid-flex-content">
+              <h5>Gulf Business</h5>
+              <p>Nov 2022</p>
             </div>
-            <div class="grid-ls-p">
-              <p>Here’s how artificial intelligence can enhance the metaverse
-              </p>
+            <div className="grid-ls-p">
+              <p>Here’s how artificial intelligence can enhance the metaverse</p>
+              <Link href="https://gulfbusiness.com/how-ai-can-enhance-the-metaverse/">View Publication</Link>
             </div>
           </div>
 
-          <div class="grid-ls">
-            <a href="https://www.ey.com/en_kw/ai/five-ways-mena-companies-can-improve-trust-in-ai" target='__blank'>
-              <img className='tt' alt='img' src='/publications/2022-04.webp'></img>
-            </a>
-            <div class="grid-flex-content">
+          <div className="grid-ls">
+            <img className="tt" alt="Publication cover" src="/publications/2022-04.webp" />
+            <div className="grid-flex-content">
               <h5>Five ways MENA companies can improve trust in AI</h5>
               <p>May 2022</p>
             </div>
-            <div class="grid-ls-p">
-              <p>MENA companies must recognize the benefits of AI in shaping their businesses and keeping up with the world evolving around them.
-              </p>
+            <div className="grid-ls-p">
+              <p>MENA companies must recognize the benefits of AI in shaping their businesses and keeping up with the world evolving around them.</p>
+              <Link href="https://www.ey.com/en_kw/ai/five-ways-mena-companies-can-improve-trust-in-ai">View Publication</Link>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="yr-2022">
+      <div className="yr-2022">
         <h3>2021 and before</h3>
 
-        <div class="grid-1">
-          <div class="grid-ls">
-            <a href="https://theinnovator.news/eva-marie-muller-stuler/" target='__blank'>
-              <img alt='img' src='/publications/2021-01.webp'></img>
-            </a>
-            <div class="grid-flex-content">
+        <div className="grid-1">
+          <div className="grid-ls">
+            <img alt="Publication cover" src="/publications/2021-01.webp" />
+            <div className="grid-flex-content">
               <h5>The Innovator</h5>
               <p>Nov 2021</p>
             </div>
-            <div class="grid-ls-p">
-              <p>Interview Of The Week: Eva-Marie Muller-Stuler, IBM Academy
-              </p>
+            <div className="grid-ls-p">
+              <p>Interview Of The Week: Eva-Marie Muller-Stuler, IBM Academy</p>
+              <Link href="https://theinnovator.news/eva-marie-muller-stuler/">View Publication</Link>
             </div>
           </div>
 
-          <div class="grid-ls">
-            <a href="https://www.analyticsinsight.net/dr-eva-marie-muller-stuler-driving-digital-transformation-across-enterprise-through-disruptive-innovation/" target='__blank'>
-              <img alt='img' src='/publications/2021-02.webp'></img>
-            </a>
-            <div class="grid-flex-content">
+          <div className="grid-ls">
+            <img alt="Publication cover" src="/publications/2021-02.webp" />
+            <div className="grid-flex-content">
               <h5>Analytics Insight</h5>
-              <p>April 2021</p>
+              <p>Apr 2021</p>
             </div>
-            <div class="grid-ls-p">
-              <p>Driving digital transformation across enterprise through disruptive innovation
-              </p>
+            <div className="grid-ls-p">
+              <p>Driving digital transformation across enterprise through disruptive innovation</p>
+              <Link href="https://www.analyticsinsight.net/dr-eva-marie-muller-stuler-driving-digital-transformation-across-enterprise-through-disruptive-innovation/">View Publication</Link>
             </div>
           </div>
 
-          <div class="grid-ls">
-            <a href="https://www.amazon.com/Management-Business-Research-Mark-Easterby-Smith/dp/1529734517/ref=pd_sbs_2/139-4429488-2502403?pd_rd_w=u4C9u&pf_rd_p=43345e03-9e2a-47c0-9b70-a50aa5ecbd5c&pf_rd_r=5HHVQCF5SCPBQKE32PT8&pd_rd_r=89f9e690-1e04-4f35-aca1-e43db8a7cc92&pd_rd_wg=KTbGy&pd_rd_i=1529734517&psc=1" target='__blank'>
-              <img alt='img' src='/publications/2021-03.webp'></img>
-            </a>
-            <div class="grid-flex-content">
+          <div className="grid-ls">
+            <img alt="Publication cover" src="/publications/2021-03.webp" />
+            <div className="grid-flex-content">
               <h5>Management and Business Research</h5>
-              <p>April 2021</p>
+              <p>Apr 2021</p>
             </div>
-            <div class="grid-ls-p">
-              <p>Interview: Working in Data Science
-              </p>
-            </div>
-          </div>
-
-          <div class="grid-ls">
-            <a href="https://medium.com/@eva.000/the-art-of-strategy-in-a-time-of-covid-19-a-war-without-a-plan-71f43263c7e2" target='__blank'>
-              <img alt='img' src='/publications/2021-04.webp'></img>
-            </a>
-            <div class="grid-flex-content">
-              <h5>The art of strategy in a time of Covid-19: A war without a planThird Item</h5>
-              <p>April 2020</p>
-            </div>
-            <div class="grid-ls-p">
-              <p>The Importance of Data Governance to win against Covid
-              </p>
+            <div className="grid-ls-p">
+              <p>Interview: Working in Data Science</p>
+              <Link href="https://www.amazon.com/Management-Business-Research-Mark-Easterby-Smith/dp/1529734517">View Publication</Link>
             </div>
           </div>
 
-          <div class="grid-ls">
-            <a href="https://medium.com/@eva.000/how-good-are-the-corona-virus-prediction-models-59a01699e0ea" target='__target'>
-              <img alt='img' src='/publications/2021-05.webp'></img>
-            </a>
-            <div class="grid-flex-content">
+          <div className="grid-ls">
+            <img alt="Publication cover" src="/publications/2021-04.webp" />
+            <div className="grid-flex-content">
+              <h5>The art of strategy in a time of Covid-19: A war without a plan</h5>
+              <p>Apr 2020</p>
+            </div>
+            <div className="grid-ls-p">
+              <p>The Importance of Data Governance to win against Covid</p>
+              <Link href="https://medium.com/@eva.000/the-art-of-strategy-in-a-time-of-covid-19-a-war-without-a-plan-71f43263c7e2">View Publication</Link>
+            </div>
+          </div>
+
+          <div className="grid-ls">
+            <img alt="Publication cover" src="/publications/2021-05.webp" />
+            <div className="grid-flex-content">
               <h5>How good are the Corona Virus prediction models?</h5>
-              <p>January 2020</p>
+              <p>Jan 2020</p>
             </div>
-            <div class="grid-ls-p">
-              <p>Currently we see more and more models predicting the future of contamination with the Corona Virus but are the models really as good as they claim to be and is it time to panic?
-              </p>
+            <div className="grid-ls-p">
+              <p>Currently we see more and more models predicting the future of contamination with the Corona Virus but are the models really as good as they claim to be and is it time to panic?</p>
+              <Link href="https://medium.com/@eva.000/how-good-are-the-corona-virus-prediction-models-59a01699e0ea">View Publication</Link>
             </div>
           </div>
 
-          <div class="grid-ls">
-            <a href="https://www.ibm.com/thought-leadership/institute-business-value/en-us/report/scaling-ai" target='__blank'>
-              <img alt='img' src='/publications/2021-06.webp'></img>
-            </a>
-            <div class="grid-flex-content">
+          <div className="grid-ls">
+            <img alt="Publication cover" src="/publications/2021-06.webp" />
+            <div className="grid-flex-content">
               <h5>Proven concepts for scaling AI</h5>
-              <p>January 2020</p>
+              <p>Jan 2020</p>
             </div>
-            <div class="grid-ls-p">
-              <p>
-                Data Engineering, Scaling AI, MLOps:
-                From experimentation to engineering discipline.
-                Co-Authors: Beth Rudden, Wouter Oosterbosch
-              </p>
+            <div className="grid-ls-p">
+              <p>Data Engineering, Scaling AI, MLOps: From experimentation to engineering discipline. Co-Authors: Beth Rudden, Wouter Oosterbosch</p>
+              <Link href="https://www.ibm.com/thought-leadership/institute-business-value/en-us/report/scaling-ai">View Publication</Link>
             </div>
           </div>
 
-          <div class="grid-ls">
-            <a href="https://link.springer.com/chapter/10.1007/978-3-030-14070-0_19" target='__blank'>
-              <img alt='img' src='/publications/2021-07.webp'></img>
-            </a>
-            <div class="grid-flex-content">
+          <div className="grid-ls">
+            <img alt="Publication cover" src="/publications/2021-07.webp" />
+            <div className="grid-flex-content">
               <h5>16th International Conference on Information Technology-New Generations</h5>
               <p>May 2019</p>
             </div>
-            <div class="grid-ls-p">
-              <p>
-                Analyzing D-Wave Quantum Macro Assembler Security
-
-                (Quantum Computing, Security)
-
-                Co-Authors: Hesham H. Alsaadi, Monther Aldwairi
-
-                Springer International
-              </p>
+            <div className="grid-ls-p">
+              <p>Analyzing D-Wave Quantum Macro Assembler Security (Quantum Computing, Security) Co-Authors: Hesham H. Alsaadi, Monther Aldwairi Springer International</p>
+              <Link href="https://link.springer.com/chapter/10ystic">View Publication</Link>
             </div>
           </div>
 
-          <div class="grid-ls">
-            <a href="https://www.amazon.com/Management-Business-Research-Jaspersen-Easterby-Smith-dp-1526446952/dp/1526446952/ref=dp_ob_title_bk" target='__blank'>
-              <img alt='img' src='/publications/2021-08.webp'></img>
-            </a>
-            <div class="grid-flex-content">
+          <div className="grid-ls">
+            <img alt="Publication cover" src="/publications/2021-08.webp" />
+            <div className="grid-flex-content">
               <h5>Working in Data Science</h5>
-              <p>January 2018</p>
+              <p>Jan 2018</p>
             </div>
-            <div class="grid-ls-p">
-              <p>
-                Interview in Management & Business Research about the work as a Data Scientist
-              </p>
+            <div className="grid-ls-p">
+              <p>Interview in Management & Business Research about the work as a Data Scientist</p>
+              <Link href="https://www.amazon.com/Management-Business-Research-Jaspersen-Easterby-Smith-dp-1526446952/dp/1526446952">View Publication</Link>
             </div>
           </div>
 
-          <div class="grid-ls">
-            <a href="https://www.amazon.com/Management-Business-Research-Jaspersen-Easterby-Smith-dp-1526446952/dp/1526446952/ref=dp_ob_title_bk" target='__blank'>
-            <img alt='img' className='interview' src='/publications/2021-09.webp'></img>
-            </a>
-            <div class="grid-flex-content">
+          <div className="grid-ls">
+            <img alt="Publication cover" className="interview" src="/publications/2021-09.webp" />
+            <div className="grid-flex-content">
               <h5>Interview – Using Decision Science to forecast customer behaviour</h5>
               <p>Dec 2016</p>
             </div>
-            <div class="grid-ls-p">
-              <p>
-                Interview with Dr. Eva-Marie Müller-Stüler Chief Data Scientist at KPMG about how to use Decision Science to forecast customer behaviour
-              </p>
-              <a className='inter-link' href='https://data-science-blog.com/blog/2016/12/12/interview-using-decision-science-to-forecast-customer-behaviour/' target='__blank'>https://data-science-blog.com/blog/2016/12/12/interview-using-decision-science-to-forecast-customer-behaviour/</a>
+            <div className="grid-ls-p">
+              <p>Interview with Dr. Eva-Marie Müller-Stüler Chief Data Scientist at KPMG about how to use Decision Science to forecast customer behaviour</p>
+              <Link href="https://data-science-blog.com/blog/2016/12/12/interview-using-decision-science-to-forecast-customer-behaviour/">View Publication</Link>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="books">
+      <div className="books">
         <h3>Book</h3>
-        <hr></hr>
-        <a href="https://www.amazon.de/Mathematische-Dopplersignals-quantitativen-Blutflusses-Medizinischen/dp/3844007164/ref=sr_1_1?crid=2F5AR4ULS7UXM&keywords=mueller-stueler&qid=1699290404&sprefix=%2Caps%2C74&sr=8-1" target='__blank'>
-        <img alt='img' src='https://img1.wsimg.com/isteam/ip/b30c73e4-0318-477a-b739-34ed592323d4/AIinBloodBook.jpg/:/cr=t:3.47%25,l:0%25,w:100%25,h:93.07%25'></img>
-        </a>
-
+        <hr />
+        <img alt="Book cover" src="https://img1.wsimg.com/isteam/ip/b30c73e4-0318-477a-b739-34ed592323d4/AIinBloodBook.jpg/:/cr=t:3.47%25,l:0%25,w:100%25,h:93.07%25" />
         <p>With Medical ultrasound, it was only possible to measure the speed of blood, which only allowed semiquatitative conclusions on the actual blood flow in human bodies.</p>
         <p>This book shows new groundbreaking methods to measure the total intensity of blood flow and get better insights into the flow profile and far more precise and better quantitative assessments of the actual medical condition of a patient.</p>
-
-        <a href='https://www.amazon.de/Mathematische-Dopplersignals-quantitativen-Blutflusses-Medizinischen/dp/3844' target='__blank'>https://www.amazon.de/Mathematische-Dopplersignals-quantitativen-Blutflusses-Medizinischen/dp/3844</a>
+        <Link href="https://www.amazon.de/Mathematische-Dopplersignals-quantitativen-Blutflusses-Medizinischen/dp/3844007164">View Book</Link>
       </div>
 
-
-      <div class="pub">
-        <h3>Other Publications
-        </h3>
-
+      <div className="pub">
+        <h3>Other Publications</h3>
         <p>Scientific and research publication are not listed. Please get in touch if needed.</p>
       </div>
-      {/* <footer className="footer">
-        <div className="footer-links">
-          {['home', 'about', 'videos', 'publications', 'podcasts', 'events'].map((tab) => (
-            <button key={tab} className="footer-link" onClick={() => handleNavClick(tab)}>
-              {tab.charAt(0).toUpperCase() + tab.slice(1)}
-            </button>
-          ))}
-        </div>
-        <div className="footer-address">
-          <p>Dr. Eva</p>
-          <p>123 Health Street, Suite 456</p>
-          <p>New York, NY 10001</p>
-        </div>
-      </footer> */}
     </div>
-  )
-}
+  );
+};
 
-export default Publications
+export default Publications;

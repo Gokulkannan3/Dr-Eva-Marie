@@ -86,9 +86,6 @@ function Home({ setAtHome }) {
         return (
           <>
           <section className="hero-section" id="home">
-            <div className="parabola-container">
-                <div className="parabola"></div>
-            </div>
             <div className="hero-portrait">
               <img src="/pp.png" alt="Portrait of Dr. Eva-Marie Muller-Stuler" />
             </div>
