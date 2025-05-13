@@ -20,7 +20,7 @@ const Publications = () => {
 
         <div className="grid-ct">
           <div className="grid-cell">
-            <img alt="Publication cover" src="/publications/2023-01.webp" />
+            <img className='public-im' alt="Publication cover" src="/publications/2023-01.webp" />
             <div className="grid-cell-content">
               <h5>Mastering Generative AI: Systematic Approach to Evaluate Risks Using AI</h5>
               <p>Nov 2023</p>
@@ -28,10 +28,10 @@ const Publications = () => {
           </div>
 
           <div className="grid-cell">
-            <img alt="Publication cover" src="/publications/2023-01.webp" />
+            <img className='publication-im' alt="Publication cover" src="/publications/2023-02.webp" />
             <div className="grid-cell-content">
-              <h5>Mastering Generative AI: Systematic Approach to Evaluate Risks Using AI</h5>
-              <p>Nov 2023</p>
+              <h5>The Importance of Adopting Ethical AI and Data Science Practices</h5>
+              <p>Aug 2023</p>
             </div>
           </div>
         </div>

@@ -14,6 +14,15 @@
   text-align: center;
 }
 
+.public-im{
+  width:550px;
+}
+
+.publication-im{
+  width:550px !important;
+  height:275px;
+}
+
 .publications hr {
   width: 50px;
 }
@@ -270,6 +279,10 @@ hr {
     margin: 0 auto;
   }
 
+  img .publication-im{
+    width:500px !important;
+  }
+
   .grid-cell-content {
     width: 100%;
     display: flex;
@@ -451,5 +464,9 @@ hr {
   .grid-ls-p .link-button {
     align-self: center;
     margin-top: 10px;
+  }
+
+  .yr-2023 img.publication-im{
+    max-width:330px !important;
   }
 }
