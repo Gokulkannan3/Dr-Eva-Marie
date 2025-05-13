@@ -212,7 +212,9 @@ const Publications = () => {
         <img alt="Book cover" src="https://img1.wsimg.com/isteam/ip/b30c73e4-0318-477a-b739-34ed592323d4/AIinBloodBook.jpg/:/cr=t:3.47%25,l:0%25,w:100%25,h:93.07%25" />
         <p>With Medical ultrasound, it was only possible to measure the speed of blood, which only allowed semiquatitative conclusions on the actual blood flow in human bodies.</p>
         <p>This book shows new groundbreaking methods to measure the total intensity of blood flow and get better insights into the flow profile and far more precise and better quantitative assessments of the actual medical condition of a patient.</p>
-        <Link href="https://www.amazon.de/Mathematische-Dopplersignals-quantitativen-Blutflusses-Medizinischen/dp/3844007164">View Book</Link>
+        <div className='bk-link'>
+          <Link href="https://www.amazon.de/Mathematische-Dopplersignals-quantitativen-Blutflusses-Medizinischen/dp/3844007164">View Book</Link>
+        </div>
       </div>
 
       <div className="pub">
