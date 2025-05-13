@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Home.css';
 import About from '../About/About';
 import Videos from '../Videos/Videos';
@@ -69,6 +69,16 @@ function Navbar({ activeLink, handleNavClick }) {
 }
 function Home({ setAtHome }) {
   const [activeLink, setActiveLink] = useState('home');
+
+  const [emailHref, setEmailHref] = useState("mailto:info@dreva.ai");
+
+  useEffect(() => {
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    if (!isMobile) {
+      // On desktop, use Gmail web link
+      setEmailHref("https://mail.google.com/mail/?view=cm&to=info@dreva.ai");
+    }
+  }, []);
 
   const handleNavClick = (link) => {
     setActiveLink(link);
@@ -280,14 +290,20 @@ function Home({ setAtHome }) {
             ))}
           </div>
 
-
-
-          <div className="footer-address">
-            <p>Dr. Eva</p>
-            <p>123 Health Street, Suite 456</p>
-            <p>New York, NY 10001</p>
+          {activeLink === 'contact' && (
+            <div className="footer-address">
+              <h4>Connect Dr. Eva, a Trusted AI Expert</h4>
+              <a
+                href={emailHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mailto"
+              >
+                info@dreva.ai
+              </a>
+            </div>
+          )}
           </div>
-        </div>
       </footer>
     </div>
   );

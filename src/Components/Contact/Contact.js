@@ -64,21 +64,6 @@ function Contact({ handleNavClick = () => {} }) {
         </a>
       </div>
 
-      {/* Footer with Navigation Links and Address */}
-      {/* <footer className="footer">
-        <div className="footer-links">
-          {['home', 'about', 'videos', 'publications', 'podcasts', 'events'].map((tab) => (
-            <button key={tab} className="footer-link" onClick={() => handleNavClick(tab)}>
-              {tab.charAt(0).toUpperCase() + tab.slice(1)}
-            </button>
-          ))}
-        </div>
-        <div className="footer-address">
-          <p>Dr. Eva</p>
-          <p>123 Health Street, Suite 456</p>
-          <p>New York, NY 10001</p>
-        </div>
-      </footer> */}
     </section>
   );
 }
