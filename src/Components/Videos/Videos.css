@@ -147,101 +147,73 @@
 
 @media (max-width: 768px) {
   .video-section {
-    max-width: 100%;
-    padding:20px;
-    margin-left:10px;
+    width: 100%;
+    padding:0;
+    margin-top:-10px;
+    display:flex;
+    align-items:center;
   }
 
   .video-list {
-    gap: 30px; /* Increased gap for better separation */
+    gap: 30px; /* Consistent gap between video items */
   }
 
   .video-item {
     flex-direction: column;
+    align-items: center; /* Center items horizontally */
     margin-bottom: 0;
-    align-items: center;
+    padding: 10px;
   }
 
   .video-item.odd,
   .video-item.even {
-    flex-direction: column;
+    flex-direction: column; /* Stack items vertically */
   }
 
   .video-container {
-    padding-top: 0; /* Remove padding that was creating aspect ratio */
     max-width: 100%;
     width: 100%;
-    height: 300px; /* Fixed height to match iframe */
-    display:flex;
-    justify-content:center;
-    margin-left:-38px;
-    gap:20px;
+    display: flex;
+    justify-content: center; /* Center the iframe horizontally */
+    padding-top: 0; /* Remove aspect ratio padding */
+    height: auto; /* Allow height to adjust based on iframe */
   }
 
   .video-container iframe {
-    position: relative; /* Change from absolute to relative */
-    height: 220px; /* Maintain iframe height */
-    width: 350px;
+    position: relative; /* Ensure iframe is not absolutely positioned */
+    width: 100%;
+    max-width: 350px; /* Limit iframe width for consistency */
+    height: 220px; /* Fixed height for consistency */
+    border-radius: 8px;
   }
 
   .video-content {
-    width: 350px;
-    padding-top: 0;
-    text-align: start; /* Center align for mobile */
+    max-width: 350px; /* Match iframe width for alignment */
+    width: 100%;
+    text-align: start; /* Align text to the left */
+    padding: 10px 0;
     gap: 10px;
-    margin-left:-25px;
-    margin-top:8px;
   }
 
   .video-title {
-    font-size: 1.3rem; /* Slightly larger for readability */
+    font-size: 1.3rem;
+    text-align: start; /* Explicitly left-align title */
   }
 
   .video-description,
   .video-description-points {
-    font-size: 1rem; /* Slightly larger for readability */
-  }
-
-  .section-title {
-    font-size: 2rem; /* Slightly larger */
-    margin-bottom: 30px;
-    margin-left:-45px;
-  }
-}
-
-@media (max-width: 480px) {
-  .video-section {
-    padding: 10px;
-  }
-
-  .video-list {
-    gap: 10px;
-  }
-
-  .video-item {
-    gap: 5px;
-    padding: 10px;
-  }
-
-  .video-content {
-    gap: 4px;
-  }
-
-  .video-title {
-    font-size: 1.1rem;
-  }
-
-  .video-description,
-  .video-description-points {
-    font-size: 0.85rem;
+    font-size: 1rem;
+    text-align: start; /* Explicitly left-align description */
   }
 
   .video-date {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    text-align: start; /* Explicitly left-align date */
   }
 
   .section-title {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center; /* Center section title */
   }
 }

@@ -138,10 +138,16 @@
 }
 
 @media (max-width: 768px) {
-  
-  .about-container h2,
   .recognition h2 {
     font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 2rem;
+  }
+
+  .about-container h2{
+    font-size: 2rem;
     text-transform: uppercase;
     text-align: center;
     font-family: "Montserrat", sans-serif;
@@ -184,6 +190,10 @@
 
   .about-hero {
     width:100% !important;
+  }
+
+  .about-hero p{
+    text-align:start;
   }
 
   .hero-image {
